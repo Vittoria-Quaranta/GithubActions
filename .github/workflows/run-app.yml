@@ -1,0 +1,27 @@
+name: 'Run App Quaranta, Vittoria'
+
+on: [push, pull_request]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install dotnet
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.x'
+      - name: build
+        run: dotnet build
+      - name: run unit tests
+        run: dotnet test
+Replace FullName on the first line with your name for grading.
+Commit and push these changes to master
+Open the Actions and see if your build is running (should be under the name of your commit).
+Build Status Badge
+Right now the build status badge at the top of this Readme is for the repo kgerot/GithubActions and we want it to be your repository.
+
+To change this, go to your last build in Actions and open it. Click the three dots on the right side of the screen and click Create status badge.
+
+Here, you can copy the markdown and replace the badge at the top of this Readme on the Github website or in VS.
+
