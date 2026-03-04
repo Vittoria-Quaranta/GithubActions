@@ -34,9 +34,9 @@ public class Subtraction
 	[TestMethod]
 	public void Subtract_Valid_Quaranta()
 	{
-		Assert.AreEqual(3, Program.Subtract("1", "2"));
-		Assert.AreEqual(5, Program.Subtract("3", "2"));
-		Assert.AreEqual(12, Program.Subtract("5", "7"));
+		Assert.AreEqual(3, Program.Subtract("5", "2"));
+		Assert.AreEqual(5, Program.Subtract("7", "2"));
+		Assert.AreEqual(12, Program.Subtract("19", "7"));
 	}
 
 	[TestMethod]
@@ -61,9 +61,9 @@ public class Division
 	[TestMethod]
 	public void Division_Valid_Quaranta()
 	{
-		Assert.AreEqual(3, Program.Divide("1", "2"));
-		Assert.AreEqual(5, Program.Divide("3", "2"));
-		Assert.AreEqual(12, Program.Divide("5", "7"));
+		Assert.AreEqual(2, Program.Divide("2", "1"));
+		Assert.AreEqual(5, Program.Divide("10", "2"));
+		Assert.AreEqual(1, Program.Divide("5", "5"));
 	}
 
 	[TestMethod]
@@ -89,9 +89,9 @@ public class Multiplication
 	[TestMethod]
 	public void Multiply_Valid_Quaranta()
 	{
-		Assert.AreEqual(3, Program.Multiply("1", "2"));
-		Assert.AreEqual(5, Program.Multiply("3", "2"));
-		Assert.AreEqual(12, Program.Multiply("5", "7"));
+		Assert.AreEqual(2, Program.Multiply("1", "2"));
+		Assert.AreEqual(6, Program.Multiply("3", "2"));
+		Assert.AreEqual(35, Program.Multiply("5", "7"));
 	}
 
 	[TestMethod]
@@ -117,9 +117,9 @@ public class Power
 	[TestMethod]
 	public void Power_Valid_Quaranta()
 	{
-		Assert.AreEqual(3, Program.Power("1", "2"));
-		Assert.AreEqual(5, Program.Power("3", "2"));
-		Assert.AreEqual(12, Program.Power("5", "7"));
+		Assert.AreEqual(1, Program.Power("1", "2"));
+		Assert.AreEqual(9, Program.Power("3", "2"));
+		Assert.AreEqual(1, Program.Power("5", "0"));
 	}
 
 	[TestMethod]
