@@ -1,3 +1,4 @@
+//vittoria
 namespace GithubActionsLab;
 
 [TestClass]
@@ -27,7 +28,7 @@ public class Addition
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add(null, null));
 	}
 }
-
+[TestClass]
 public class Subtraction
 {
 	[TestMethod]
@@ -54,6 +55,7 @@ public class Subtraction
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Subtract(null, null));
 	}
 }
+[TestClass]
 public class Division
 {
 	[TestMethod]
@@ -80,6 +82,7 @@ public class Division
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Divide(null, null));
 	}
 }
+[TestClass]
 
 public class Multiplication
 {
@@ -107,6 +110,7 @@ public class Multiplication
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Multiply(null, null));
 	}
 }
+[TestClass]
 
 public class Power
 {
